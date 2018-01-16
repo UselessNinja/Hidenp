@@ -7,7 +7,7 @@
 
 NAME = 		hidenp
 
-CC =		gcc -g
+CC =		gcc
 
 SRC = 		src/main.c	\
 		src/hidenp.c
@@ -33,7 +33,6 @@ clean:
 fclean: 	clean
 		$(RM) $(NAME)
 		$(MAKE) -C ./lib/my fclean
-		$(RM) vgcore.*
 
 re: 		fclean all
 
